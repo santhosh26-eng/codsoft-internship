@@ -1,0 +1,17 @@
+num1 = int(input("Enter the 1st number:"))
+num2 = int(input("Enter the 2nd number:"))
+wish = input("Enter an symbol (+ - * /):")
+if wish == '+':
+result = num1 + num2
+print(round(result,3))
+elif wish == '-':
+result = num1 - num2
+print(round(result,3))
+elif wish == '*':
+result = num1 * num2
+print(round(result,3))
+elif wish == '/':
+result = num1 / num2
+print(round(result,3))
+else:
+print("SYNTAX ERROR.....")
