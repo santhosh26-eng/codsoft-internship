@@ -1,0 +1,24 @@
+import random
+def play():
+while true:
+you=imput("pick a choice: 1.'r'for rock  2.'p'for paper 3.'s'for scissors 4.'e'for exit:")
+
+if you == 'e':
+print(" ******** GAME OVER ************)
+
+computer = random.choice(['r','p','s'])
+winner(you,computer)
+
+def winner(you,computer):
+if you == computer:
+print("It is a tie!")
+return
+
+if you == 'r' and computer == 's' \ or you == 'p' and computer == 'r' \ or you == 's' and computer == 'p':
+print("you win")
+else:
+print("computer has selected:" +computer)
+print("computer wins!")
+
+if __name__=='__main__':
+play()
